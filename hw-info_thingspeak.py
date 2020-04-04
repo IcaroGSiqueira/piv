@@ -24,7 +24,7 @@ def doit():
 		print(cpu_percent)
 		print(mem.available)
 		print(cpu_freq.current)
-		print(cpu_temp.)
+		print(cpu_temp)
 		print(strftime("%a, %d %b %Y %H:%M:%S", localtime()))
 		print(response.status, response.reason)
 		data = response.read()
