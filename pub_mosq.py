@@ -14,6 +14,8 @@ user = "0"
 #passw = "exehda"
 passw = "0"
 
+yn = "n"
+
 yn = input("Deseja digitar as informaçoes? (y/n) ")
 
 if yn == "y":
