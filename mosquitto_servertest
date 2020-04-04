@@ -1,2 +1,0 @@
-mosquitto_sub -h 200.132.103.53 -t piv -u middleware -P exehda
-mosquitto_pub -h 200.132.103.53 -t piv -u middleware -P exehda -m "Terceira"
