@@ -5,7 +5,7 @@ import subprocess
 import time
 import http.client
  
-sleep = 8 
+sleep = 90
 key = 'HQISCJAU87GQL8PB'  # Thingspeak API key
 
 while True:
