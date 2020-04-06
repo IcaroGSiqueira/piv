@@ -25,7 +25,6 @@ def doit():
 			break
 	cpu_temp = entry.current
 
-
 	gpu_temp = gpu_temp.decode("utf-8")
 	gpu_temp = gpu_temp.split("\n")
 
