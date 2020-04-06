@@ -8,7 +8,7 @@ import http.client
 sleep = 8 
 key = 'HQISCJAU87GQL8PB'  # Thingspeak API key
 
-def doit():
+while True:
 	cpu_percent = psutil.cpu_percent(interval=1)
 	cpu_freq = psutil.cpu_freq(percpu=False)
 	mem = psutil.virtual_memory()
@@ -43,7 +43,7 @@ def doit():
 	params = urllib.parse.urlencode({'field1': mem.available, 'field2': cpu_percent, 'field3': cpu_freq.current, 'field4': cpu_temp, 'field5': gpu_temp[0], 'field6': gpu_freq[0], 'field7': gpu_mem[0], 'field8': gpu_percent[1], 'key':key}) 
 	headers = {"Content-type": "application/x-www-form-urlencoded","Accept": "text/plain"}
 	conn = http.client.HTTPConnection("api.thingspeak.com:80")
-	time.sleep(1)
+	time.sleep(sleep)
 
 	try:
 		conn.request("POST", "/update", params, headers)
@@ -62,8 +62,4 @@ def doit():
 		conn.close()
 	except:
 		print("connection failed")
- 
-if __name__ == "__main__":
-	while True:
-		doit()
-		time.sleep(sleep)
+		
