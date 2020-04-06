@@ -5,7 +5,7 @@ import subprocess
 import time
 import http.client
  
-sleep = 30 
+sleep = 8 
 key = 'HQISCJAU87GQL8PB'  # Thingspeak API key
 
 def doit():
