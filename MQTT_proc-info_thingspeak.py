@@ -14,7 +14,6 @@ WRITE_API_KEY = "3T2HQB2FUCZ95Z4D"
 topic = "channels/" + CHANNEL_ID + "/publish/" + WRITE_API_KEY
 
 sleep = 59 # Intervalo em segundos de cada postagem
-key = "HQISCJAU87GQL8PB"  # Thingspeak API key
 
 net_sts = 0 
 old_value = 0

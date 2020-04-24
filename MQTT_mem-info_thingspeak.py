@@ -9,13 +9,12 @@ import subprocess
 SERVER = "mqtt.thingspeak.com"
 
 CHANNEL_ID = "1044535"
+
 WRITE_API_KEY = "3DA656M1HS6ZO0E5"
 
 topic = "channels/" + CHANNEL_ID + "/publish/" + WRITE_API_KEY
 
-
 sleep = 5 # Intervalo em segundos de cada postagem
-key = "HQISCJAU87GQL8PB"  # Thingspeak API key
 
 while True:
     # Leitura dos sensores

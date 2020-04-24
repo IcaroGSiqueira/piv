@@ -14,7 +14,6 @@ WRITE_API_KEY = "UCGURXQSV8FXK6JF"
 topic = "channels/" + CHANNEL_ID + "/publish/" + WRITE_API_KEY
 
 sleep = 300 # Intervalo em segundos de cada postagem
-key = "HQISCJAU87GQL8PB"  # Thingspeak API key
 
 while True:
     # Leitura dos sensores
